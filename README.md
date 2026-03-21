@@ -2,15 +2,14 @@
 
 DL Astronomy is a deep learning project for galaxy classification.  
 It predicts five types of galaxies from images:
-- Cigar-shaped smooth
-- Intermediate smooth
-- Completely round smooth
-- Edge-on
+- Barred Spiral
+- Elliptical
 - Spiral
 
 ## Datasets
 
-- **Galaxy Zoo classification** from kaggle : https://www.kaggle.com/datasets/anjosut/galaxy-zoo-classification
+- **Galaxy Zoo 2: Images** from kaggle : https://www.kaggle.com/datasets/jaimetrickz/galaxy-zoo-2-images
+- **Normal-depth sample with new debiasing method** from kaggle : https://gz2hart.s3.amazonaws.com/gz2_hart16.csv.gz
 
 ## License
 
