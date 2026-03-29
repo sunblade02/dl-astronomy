@@ -1,0 +1,9 @@
+services:
+    backend:
+        build:
+            dockerfile: ./docker/backend.Dockerfile
+        image: astronomia/backend:1.0
+        ports:
+            - ${BACKEND_PORT:-8000}:8000
+        volumes:
+            - ./app:/app/app

@@ -1,2 +1,5 @@
-/best_model_frozen.keras
-/data
+/app/__pycache__
+/src/data
+/src/model/*
+!/src/model/.gitkeep
+/tests
