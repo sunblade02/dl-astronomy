@@ -5,9 +5,9 @@ ENV PYTHONIOENCODING=utf-8
 
 WORKDIR /app
 
-COPY requirements.txt .
-COPY app ./app
-COPY model ./model
+COPY backend/requirements.txt .
+COPY backend/app ./app
+COPY backend/model ./model
 
 RUN pip install --no-cache-dir -r requirements.txt
 

@@ -3,6 +3,7 @@ from pydantic import BaseModel
 import numpy as np
 import tensorflow as tf
 import time
+from fastapi.middleware.cors import CORSMiddleware
 
 from .preprocess import preprocess
 
@@ -12,6 +13,19 @@ class Prediction(BaseModel):
     execution_time: float
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:3000",
+    "http://localhost:8080"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 model = tf.keras.models.load_model("./model/astronomia.keras", compile=False)
 
