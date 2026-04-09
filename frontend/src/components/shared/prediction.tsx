@@ -25,7 +25,7 @@ export function Prediction({
     className: string|null
 }) {
     let confidence: number|null = null;
-    if (proba) {
+    if (proba && className !== "unknown") {
         confidence = Math.round((proba > 0.5 ? proba : 1 - proba) * 100);
     }
 
