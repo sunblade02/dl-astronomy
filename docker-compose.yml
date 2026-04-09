@@ -3,7 +3,7 @@ services:
         container_name: astronomia-backend
         build:
             dockerfile: ./docker/backend.Dockerfile
-        image: astronomia/backend:1.0
+        image: astronomia/backend:2.0
         ports:
             - ${BACKEND_PORT:-8000}:8000
     frontend:
